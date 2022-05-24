@@ -29,6 +29,11 @@ export default function mdnComaptDataProvider(): ProviderApiMetadata[] {
         kind: APIKind.ES,
       })
     ),
+    {
+      ...browserCompatData.webextensions.api,
+      name: "browser", // TODO: support chrome keyword
+      kind: APIKind.WebExtension,
+    },
   ];
 
   normalizedBrowserCompatApis.forEach((api) => {

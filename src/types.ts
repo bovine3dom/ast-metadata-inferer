@@ -33,4 +33,5 @@ export enum Language {
 export enum APIKind {
   Web = "web",
   ES = "es",
+  WebExtension = "webext",
 }
